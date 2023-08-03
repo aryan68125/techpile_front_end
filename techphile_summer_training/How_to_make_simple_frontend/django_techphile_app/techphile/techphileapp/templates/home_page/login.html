@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block start %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<style>
+.Login_heading {
+  font-family: "Audiowide", sans-serif;
+}
+label{
+  font-family: "Audiowide", sans-serif;
+}
+</style>
+
+<div id ="login_form">
+<div id="login_left">
+  <center> <h1 class = "Login_heading"> Account Login </h1> </center>
+    <form>
+        <div class="login_form_container">
+            <label>Username : </label> <br/>
+            <input type="text" class = "txt_login" placeholder="Enter Username" name="username" required> <br/>
+            <label>Password : </label> <br/>
+            <input type="password" class = "txt_login" placeholder="Enter Password" name="password" required> <br/>
+            <input type="checkbox" checked="checked"> <b>Remember me<b/>
+            <b style = "color : #005792;">Forgot<b/> <a href="#" style = "color:#005792;"> password? </a>
+            <button class = "login_btn" type="submit">Login</button>
+        </div>
+    </form>
+</div>
+<div id="login_right">
+
+  </div>
+  </div>
+{% endblock %}

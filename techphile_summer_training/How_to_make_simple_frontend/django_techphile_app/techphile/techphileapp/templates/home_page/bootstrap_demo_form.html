@@ -1,0 +1,49 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+  <link href = "/static/css/bootstrap.css?{% now U %}" rel="stylesheet"/>
+  <link href = "/static/css/all.css?{% now U %}" rel="stylesheet"/>
+
+  <style>
+    :roots{
+      --mycolor:linear-gradient(45deg, #ff6f3c, #ff8800, red);
+    }
+    body{
+      background:var(--mycolor);
+    }
+    .login{
+      min-height:300px;
+    }
+    .bg-mycolor
+    {
+      background:var(--mycolor) !important;
+    }
+    .txt{
+      height: 50px;
+    }
+    .login:hover{
+      background:black !important;
+      box-shadow: 0px 0px 50px 5px black;
+      transform:scale(1.05);
+      transition:all 1s;
+      color:white !important;
+    }
+  </style>
+</head>
+
+<body style="background-image: linear-gradient(to right, red, yellow);">
+ <div class="container">
+   <div class="row pt-5">
+   <div class="col-sm-6 login bg-light mx-auto mt-5 p-5 ">
+         <div class="text-center fs-2 ">Login<b style="color:red;">Form</b></div>
+         <form>
+             <input text="email" class="form-control txt mt-3" placeholder="Username"></input>
+             <input text="password" class="form-control txt my-4" placeholder="Password"></input>
+             <input type="submit" class="form-control-bg-mycolor txt btn btn-outline-success" value"Login"/>
+         </form>
+   </div>
+   </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+	<link href = "/static/css/bootstrap.css?{% now U %}" rel="stylesheet"/>
+  <link href = "/static/css/all.css?{% now U %}" rel="stylesheet"/>
+</head>
+<body>
+<p class= "bg-danger">
+   <i class="fa-brands fa-square-facebook fa-shake ms-3 " style="color:white; font-size:80px;"></i>
+</p>
+
+<div class="container-fluid text-bg-warning">
+  Welcome to the world of bootstrap
+  <div class="row">
+    <div class="col-6 bg-danger" style="height: 50px;">
+    </div>
+    <div class="col-6 bg-dark" style="height: 50px;">
+        <div class = "row">
+         <div class="col-6 bg-primary" style="height:30px;""></div>
+         <div class="col-6 bg-secondary" style="height:30px;""></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-dark mt-5">
+<h3 class="text-bg-dark">Task of today</h3>
+
+<div>
+  <h1 class="text-bg-primary p-3"> This page is a demonstration of bootstrap</h1>
+  <h4 class="text-bg-primary p-3"> This page demonstrates how to use bootstrap classes</h4>
+  <div class = "ul text-bg-dark p-3">
+      <li>How to use row and column class to partition the screen</li>
+      <li>If you want to partition the screen vertically then make row your parent and then use column to partition the screen vertically. Each Row have 12 columns</li>
+      <li>If you want to partition the screen horizontally then make the column your parent and then use row to partition the screen horizontally. Each column have 12 rows</li>
+      <li>A column cannot have another column as a child</li>
+      <li>A row cannot have another row as a child</li>
+      <li>you have to use row and column alternatively in order to get the desired partition on a page</li>
+      <li>row and column classes in bootstrap makes partitioning of the page very easy</li>
+  </div>
+</div>
+
+<div class="column">
+  <div class="row">
+       <div class="col-4 bg-primary mt-4" style="height:400px;"></div>
+       <div class="col-4 bg-warning mt-4" style="height:400px;"></div>
+       <div class="col-4 bg-success mt-4" style="height:400px;"></div>
+  </div>
+  <div class="row">
+       <div class="col-6 bg-danger " style="height:400px;"></div>
+       <div class="col-6 bg-dark " style="height:400px;">
+            <div class="row">
+                 <div class="col-12 bg-light " style="height:200px;"></div>
+            </div>
+            <div class="row">
+              <div class="col-6 bg-info " style="height:200px;"></div>
+              <div class="col-6 bg-success " style="height:200px;">
+            </div>
+       </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

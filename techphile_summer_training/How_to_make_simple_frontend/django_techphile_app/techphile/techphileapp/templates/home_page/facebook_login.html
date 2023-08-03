@@ -1,0 +1,52 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+   <link rel="stylesheet" href="/static/css/facebook_login.css?{% now "U" %}">
+</head>
+
+<div id="header">
+ <div class = "left_col" style="font-size:35px;">
+  <img src="/static/images/icons/facebook_header_logo.png" id = "header_logo_edu"/>
+ </div>
+
+ <div class = "right_col">
+   <div id ="right_menu" class = "bg-mycolor">
+    <div id = "menu_left">
+      <div id="login_form_left_header" >
+      <form>
+       <label>Email or Phone </label> <br/>
+       <input type="text" class = "login_header_txt" placeholder="Email or Phone"/><br/>
+       <input type="checkbox" checked="checked"> <b>Keep me Logged in<b/>
+     </form>
+     </div>
+    </div>
+    <div id = "menu_right">
+      <div id="login_form_right_header_left_partition" >
+      <form>
+       <label>Password </label> <br/>
+       <input type="text" class = "login_header_txt" placeholder="Password"/><br/>
+       <a href="#" style= "color:white;">Forgot your Password?<a/>
+     </form>
+     </div>
+     <div id="login_form_right_header_right_partition" >
+       <button class = "Header_login_btn" type="submit">Login</button>
+    </div>
+    </div>
+  </div>
+ </div>
+
+</div>
+
+<div id ="slider">
+
+  <div id = "left">
+
+  </div>
+
+  <div id = "right">
+
+  </div>
+</div>
+
+</html>

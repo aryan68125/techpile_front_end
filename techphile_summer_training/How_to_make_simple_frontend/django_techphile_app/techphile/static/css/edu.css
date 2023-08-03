@@ -1,0 +1,168 @@
+#header
+{
+    height:65px;
+    width: calc(100%);
+    background: #f2f2f2;
+}
+.left_col
+{
+  width: calc(20%);
+  height:65px;
+  float:left;
+  background:#f2f2f2;
+  text-align:center;
+  font-size: 18px;
+  padding-top:110x;
+  box-sizing: border-box;
+}
+.right_col
+{
+    width: calc(50%);
+    height:65px;
+    float:left;
+    background:#f2f2f2;
+    text-align:center;
+    font-size: 18px;
+    padding-top:110x;
+    box-sizing: border-box;
+}
+
+/*
+edu page
+*/
+#header_logo_edu
+{
+  width : 95% ; height : 95%; padding-bottom: 2px; box-sizing: border-box;
+}
+#menu
+{
+    height:45px;
+    width: 1200px;
+    padding-top : 10px;
+    box-sizing: border-box;
+    padding-left: 200px;
+}
+.bg-mycolor
+{
+    background: #f2f2f2;
+}
+#menu ul
+{
+    list-style-type: none;
+}
+#menu ul li
+{
+    height: 40px;
+    width:120px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+    line-height: 40px;
+    float:left;
+    transition: all 1s;
+}
+#menu ul li:hover
+{
+    background: #42b883;
+    color:white;
+    transition: all 1s;
+}
+#slider
+{
+    height:500px;
+    width:calc(100%);
+    background: url("/static/images/bg/bg_slider_two.jpg");
+    filter: brightness(70%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#slider_heading
+{
+  padding-top: calc(10%);
+  text-align: center;
+  font-size: 42px;
+  color: #FFFFFF;
+}
+#slider_body
+{
+  padding-top: 10px;
+  padding-left: calc(10%);
+  padding-right: calc(10%);
+  text-align: center;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+#visit_button_container
+{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  margin-left: calc(40% + 80px);
+  margin-right: calc(40% + 80px);
+}
+.visit_btn
+{
+  height: 50px;
+  width : 100%;
+  border: none;
+  color: white;
+  background: #347474 ;
+  border-radius: 5px;
+}
+#courses
+{
+    min-height: 150px;
+    width: 800px;
+    background: #93e4c1;
+    margin-left: calc(20% + 25px);
+    margin-top:calc(5%);
+}
+.course_col
+{
+    width: calc(20%);
+    height:calc(100%);
+    float:left;
+    background:#002244;
+    text-align:center;
+    font-size: 18px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+#course_menu #list .course_col
+{
+    height:200px;
+    width:calc(20%);
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+    float:left;
+    transition: all 1s;
+}
+#course_menu #list .course_col:hover
+{
+    background: #4C516D;
+    color:#002244;
+    transition: all 1s;
+}
+#course_menu_image
+{
+    width : 90% ; height : 90%; padding-bottom: 20px; box-sizing: border-box;
+}
+#course_menu_image2
+{
+    width : 80% ; height : 80%; padding-bottom: 20px; box-sizing: border-box;
+}
+#course_menu_image3
+{
+    width : 80% ; height : 80%; padding-bottom: 20px; box-sizing: border-box;
+}
+#course_menu_image4
+{
+    width : 80% ; height : 80%; padding-bottom: 20px; box-sizing: border-box;
+}
+#course_menu_image5
+{
+    width : 80% ; height : 80%; padding-bottom: 20px; box-sizing: border-box;
+}

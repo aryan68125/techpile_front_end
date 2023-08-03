@@ -1,0 +1,208 @@
+<html>
+	
+<head>
+	
+<style>
+	
+#outer
+{
+	min-height:1000px;
+	width:1200px;
+	border:1px solid black;
+    margin : 0px auto;
+}
+#header
+{
+	height:65px;
+	width:1200px;
+	background: red;
+}
+.col
+{
+	width:400px;
+	height:65px;
+	float:left;
+	background:#f2f2f2;
+	text-align:center;
+	font-size: 18px;
+	padding-top:110x;
+	box-sizing: border-box;
+}
+#menu
+{
+	height:45px;
+    width: 1200px;
+    padding-top : 2px;
+    box-sizing: border-box;
+    padding-left: 200px;
+}
+.bg-mycolor
+{
+	background: #c01818;
+}
+#menu ul
+{
+	list-style-type: none;
+}
+#menu ul li 
+{
+	height: 40px;
+	width:120px;
+	font-weight: bold;
+	color:white;
+	text-align: center;
+	line-height: 40px;
+	float:left;
+	transition: all 1s;
+}
+#menu ul li:hover
+{
+	background: white;
+	color:#c01818;
+	transition: all 1s;
+}
+#slider
+{
+  height:500px;
+  width:1200px;
+  background: url(image_bg/bg_1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  animation-name : slider;
+  animation-duration : 9s;
+  animation-iteration-count: infinite;
+}
+#left
+{
+	min-height: 500px;
+	width:700px;
+	float:left;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	box-sizing: border-box;
+	color : white;
+	font-size: 20px;
+}
+#right
+{
+	min-height: 450px;
+	width: 400px;
+	float : left;
+	background: rgba(0,0,0,.6);
+	margin : 25px 50px;
+	border-radius: 5px;
+	padding : 50px;
+	box-sizing: border-box;
+}
+.txt{
+  height: 50px;
+  width : 100%;
+  margin-bottom: 10px;
+}
+.txta
+{
+  width : 100%;
+  height : 80px;
+  margin-bottom: 10px;
+}
+.btn
+{
+	height: 50px;
+	width : 100%;
+	border: none;
+	color: white;
+	background: #c01818 ;
+}
+@keyframes slider
+{
+   
+}
+#services
+{
+	min-height: 300px;
+	width: 1200px;
+    background: #f0f0f0;
+}
+#aboutus
+{
+
+}
+#upperfooter
+{
+	min-height : 350px;
+	width : 1200;
+	background: black;
+}
+#bottomfooter
+{
+	min-height : 45px;
+	width : 1200px;
+	background: black;
+	margin-top: 2px;
+}
+</style>
+
+</head>
+
+<body>
+	
+<div id="outer">
+	
+	<div id="header">
+	   <div class = "col" style="font-size:35px;">
+	   	TechPhile <b style ="color:#c01818;"> Stack </b>
+	   </div>	
+
+	   <div class = "col">
+	   	<b>Mail Us </b> <br/>
+	   </div>
+
+	   <div class ="col">
+	   	<b> Call Us</b> <br/> 
+	   	66196912691, 64376328
+	   </div>
+	</div>
+
+	<div id ="menu" class = "bg-mycolor">
+		<ul style = "margin:0px">
+			<a href="#">
+			<li>Home</li>
+			<li>About Us</li>
+			<li>Contact Us</li>
+			<li>Register</li>
+			<li>Gallery</li>
+			<li>Login</li>
+		</a>
+		</ul>
+		
+	</div>
+
+	<div id ="slider">
+		
+		<div id = "left">
+			<div style = "font-size: 40px;"><b style = "color: #c01818;">Welcome to </b> TechPhile Stack</div>
+			<i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</i>
+		</div>
+
+		<div id = "right">
+			<form>
+				<input type="text" class = "txt" placeholder="Name"/><br/>
+				<input type="number" class = "txt" placeholder="Mobile"/><br/>
+				<input type="email" class = "txt" placeholder="your email id"/><br/>
+				<textarea class = "txta"></textarea><br/>
+				<input type="submit" name="SAVE" class = "btn" value="Save">
+			</form>
+		</div>
+	</div>
+
+	<div id = "services"></div>
+	<div id = "aboutus"></div>
+	<div id = "gallery"></div>
+	<div id = "contactus"></div>
+	<div id = "upperfooter"></div>
+	<div id = "bottomfooter"></div>
+</div>
+</body>
+</html>

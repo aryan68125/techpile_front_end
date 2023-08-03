@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block start %}
+<div id="outer">
+
+	<div id ="menu" class = "bg-mycolor">
+		<ul style = "margin:0px">
+			<a href="#">
+			<li>Home</li>
+			<li>About Us</li>
+			<li>Contact Us</li>
+			<li>Register</li>
+			<li>Gallery</li>
+			<li>Login</li>
+		</a>
+		</ul>
+
+	</div>
+
+	<div id ="slider">
+
+		<div id = "left">
+			<div style = "font-size: 40px;"><b style = "color: #c01818;">Welcome to </b> TechPhile Stack</div>
+			<i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</i>
+		</div>
+
+		<div id = "right">
+			<form>
+				<input type="text" class = "txt" placeholder="Name"/><br/>
+				<input type="number" class = "txt" placeholder="Mobile"/><br/>
+				<input type="email" class = "txt" placeholder="your email id"/><br/>
+				<textarea class = "txta"></textarea><br/>
+				<input type="submit" name="SAVE" class = "btn" value="Save">
+			</form>
+		</div>
+	</div>
+
+	<div id = "services">
+        <div id ="service_menu" class = "bg-mycolor">
+		<div id = "list" style = "margin:0px">
+			<a href="#">
+			<div class = "service_col" >
+	   	        <b> Summer Training </b> <br/>
+                <img src="/static/images/icons/Summer_training.webp" id = "service_menu_image"/>
+	        </div>
+
+	   <div class = "service_col">
+	   	<b>Winter Training </b> <br/>
+           <img src="/static/images/icons/winter_training.webp" id = "service_menu_image2"/>
+	   </div>
+
+	   <div class ="service_col">
+	   	<b> Apprenticeship Program</b> <br/>
+           <img src="/static/images/icons/apprenceship.png" id = "service_menu_image3"/>
+	   </div>
+
+       <div class ="service_col">
+	   	<b> Syllabus</b> <br/>
+           <img src="/static/images/icons/syllabus.png" id = "service_menu_image4"/>
+	   </div>
+
+       <div class ="service_col">
+	   	<b> Industrial Training</b> <br/>
+           <img src="/static/images/icons/industrial_training.png" id = "service_menu_image5"/>
+	   </div>
+
+		</a>
+		</div>
+	</div>
+    </div>
+
+	<div id = "aboutus">
+      <div id ="slider2">
+
+		<div id = "left_slider2">
+			<div style = "font-size: 40px;"><b style = "color: #c01818;">We </b> Believe</div>
+			<i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</i>
+		</div>
+
+		<div id = "right_slider2">
+			<img src="/static/images/bg/cert.jpg" id = "right_slider2_image"/>
+		</div>
+	</div>
+    </div>
+
+	<div id = "contactus">
+        <div id = "contactus_menu" >
+             <div id = "contactus_left_menu">
+							 <div id ="contact_options" class = "bg-mycolor">
+			 		<div id = "list" style = "margin:0px">
+			 			<a href="#">
+			 			<div class = "contact_options_row" >
+			 	   	        <b> Email </b> <br/>
+			                 <img src="/static/images/icons/Summer_training.webp" id = "contact_options_image"/>
+			 	        </div>
+
+			 	   <div class = "contact_options_row">
+			 	   	<b>Instagram </b> <br/>
+			            <img src="/static/images/icons/winter_training.webp" id = "contact_options_image2"/>
+			 	   </div>
+
+			 	   <div class ="contact_options_row">
+			 	   	<b> Whatsapp</b> <br/>
+			            <img src="/static/images/icons/apprenceship.png" id = "contact_options_image3"/>
+			 	   </div>
+
+			        <div class ="contact_options_row">
+			 	   	<b> Mobile</b> <br/>
+			            <img src="/static/images/icons/syllabus.png" id = "contact_options_image4"/>
+			 	   </div>
+
+			        <div class ="contact_options_row">
+			 	   	<b> Telegram</b> <br/>
+			            <img src="/static/images/icons/industrial_training.png" id = "contact_options_image5"/>
+			 	   </div>
+
+			 		</a>
+			 		</div>
+			 	</div>
+						 </div>
+						 <div id = "contactus_right_menu">
+							 <form>
+								<input type="text" class = "txt" placeholder="Name"/><br/>
+								<input type="number" class = "txt" placeholder="Mobile"/><br/>
+								<input type="email" class = "txt" placeholder="your email id"/><br/>
+								<textarea class = "txta"></textarea><br/>
+								<input type="submit" name="SAVE" class = "btn" value="Save">
+							</form>
+						 </div>
+				</div>
+        </div>
+				<div id = "upperfooter">
+          <div id = "address" style = "background : black;">
+						<br/>
+						<br/>
+						<b id = "address_heading">Find </b><b style="color:white; font-size: 32px;">us -></b><br/>
+					</div>
+					<div id="address_body" style = "background : black;">
+						<br/>
+						<br/>
+						<b id = "address_body">10925 S Washtenaw Ave, Chicago, Indiana, 60655, United States, Longitude and Latitude : 41.694516, -87.688407 </b><br/>
+					</div>
+				</div>
+				<div id = "bottomfooter">
+					<br/>
+            <b id = "bottomfooter_body" >All rights reserved, Aditya Industries @ </b><br/>
+				</div>
+	</div>
+{% endblock %}

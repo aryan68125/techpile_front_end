@@ -1,0 +1,69 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+  <link href = "/static/css/bootstrap.css?{% now U %}" rel="stylesheet"/>
+  <link href = "/static/css/all.css?{% now U %}" rel="stylesheet"/>
+  <script src="static/js/bootstrap.bundle.js"></script>
+</head>
+
+<body style="background-image: linear-gradient(to right, red , yellow);
+">
+
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="container text-bg-light p-3 mt-5 " style="border-radius:10px;">
+          <div class="row">
+              <div class="col-sm-6">
+                <p class="fs-4 text-dark">Registration</p>
+              </div>
+              <div class="col-sm-6">
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-6">
+    <label for="exampleInputEmail1">Full Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+              </div>
+
+              <div class="col-6 mt-2">
+                  <label for="exampleInputPassword1">Username</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Username">
+              </div>
+
+              <div class="col-6 mt-2">
+                <label for="exampleInputPassword1">Email</label>
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter email">
+              </div>
+
+              <div class="col-6 mt-2">
+                <label for="exampleInputPassword1">Phone Number</label>
+                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone Number">
+              </div>
+
+              <div class="col-6 mt-2">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+              </div>
+
+              <div class="col-6 mt-2">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Confirm Password">
+              </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12">
+
+                <input type="submit" class="form-control-bg-mycolor w-100 txt btn btn-primary btn-block mb-2 p-2" value="Register" style="background-image: linear-gradient(to right, red , yellow);"></input>
+
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-4"></div>
+  </div>
+
+</body>
+</html>

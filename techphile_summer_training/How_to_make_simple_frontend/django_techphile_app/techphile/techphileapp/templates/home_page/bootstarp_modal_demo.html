@@ -1,0 +1,108 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+  <link href = "/static/css/bootstrap.css?{% now U %}" rel="stylesheet"/>
+  <link href = "/static/css/all.css?{% now U %}" rel="stylesheet"/>
+
+  <script src="static/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+<!--start modal-->
+<div >
+<a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open Login form</a>
+</div>
+<div  class="container">
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+ <div class="modal-dialog modal-dialog-centered">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalToggleLabel">
+         Login <b class="text-danger">Form</b>
+       </h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+
+     <div class="modal-body">
+       <form>
+       <div class="form-group mt-3">
+       <div class="input-group input-group-lg">
+         <div class="input-group-prepend">
+         <span class="input-group-text"><i class="fa-solid fa-user fa-shake " style="color:black; font-size:37px;"></i></span>
+         </div>
+           <input type="text" class="form-control txt" placeholder="Username or Email">
+       </div>
+     </div>
+
+     <div class="form-group mt-3">
+     <div class="input-group input-group-lg">
+       <div class="input-group-prepend">
+       <span class="input-group-text"><i class="fa-solid fa-lock fa-shake " style="color:black; font-size:37px;"></i></span>
+       <i class=""></i>
+       </div>
+         <input type="password" class="form-control txt" placeholder="Password">
+     </div>
+     </div>
+
+           <div class= "pb-2">
+             <input type="checkbox" checked="checked"> <b>Remember me<b/>
+           </div>
+           <div class="row">
+             <div class="col-sm-6  me-0">
+               <div class="row">
+                 <div class= "col-6">
+                   <input type="submit" class="form-control-bg-mycolor w-100 txt btn btn-success mb-2 p-2" value="login"></input>
+                 </div>
+                 <div class= "col-6 ps-0 g-0">
+                   <input type="submit" class="form-control-bg-mycolor w-100 txt btn btn-primary btn-block mb-2 p-2" value="login with Facebook"></input>
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm-6  ps-0 txt-start ">
+
+             </div>
+           </div>
+
+           <div class="bg-dark mb-2" style="height:2px; width:calc(100%);"></div>
+
+           <div class="row ">
+             <div class="col-sm-8 ps-2 g-0">
+               <div class="row">
+                 <div class= "col-6">
+                   <p class="fs-6 text-dark me-0 text-start">Don't have an account?</p>
+                 </div>
+                 <div class= "col-6 ps-0 g-0">
+                   <a href="#" class="text-primary text-start fs-6" >Sign Up Here <a/>
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm-4 p-0 g-0">
+
+             </div>
+           </div>
+       </form>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+ <div class="modal-dialog modal-dialog-centered">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body">
+       Hide this modal and show the first with the button below.
+     </div>
+     <div class="modal-footer">
+       <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+     </div>
+   </div>
+ </div>
+</div>
+
+</div>
+<!--End modal-->
+</body>
+</html>

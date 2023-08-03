@@ -1,0 +1,624 @@
+{% extends 'bootstrap_demo_home_work_news_portal_base.html' %}
+{% load static %}
+{% block start %}
+<!--news body start-->
+<div class="row">
+<!--image slider column start-->
+  <div class="col-sm-12 col-lg-6">
+    <!--image slider start-->
+    <div class="row container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/images/bg/news_image_1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/bg/news_image_2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/bg/news_image_3.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/bg/news_image_4.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+    <!--image slider end-->
+  </div>
+<!--image slider column end-->
+
+<!--Top news HEadline column start-->
+  <div class="col-sm-12 col-lg-6">
+    <!--News headline heading start-->
+    <div class="row">
+      <p class="heading-font fs-4 text-center">Top 10 News <b class="heading-mycolor">Headline </b><i class="fa-regular fa-newspaper fa-shake heading-icon-color"></i></p>
+    </div>
+    <!--News headline heading end-->
+
+<!--top 10 news contianer start-->
+  <div class="top-news-section-scrollbar"> <!--add a scroll bar to this-->
+    <div class="row container ">
+      <div class="card">
+        <div class="row">
+          <div class="col-6">
+            <img src="static/images/bg/news_image_1.jpg" class="d-block w-100 p-2" alt="...">
+          </div>
+          <div class="col-6">
+            <div class="card-body">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of  Ipsum
+            </div>
+            <div class="row container">
+              <div class="col-lg-6 col-sm-12">
+                <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                <input type="submit" class="
+                form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                </form>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <p><i class="fa-solid fa-calendar-days"></i> Date | sept 9 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         </div>
+    </div>
+
+    <div class="row container">
+      <div class="card">
+        <div class="row">
+          <div class="col-6">
+            <img src="static/images/bg/news_image_2.jpg" class="d-block w-100 p-2" alt="...">
+          </div>
+          <div class="col-6">
+            <div class="card-body">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of  Ipsum
+            </div>
+            <div class="row container">
+              <div class="col-lg-6 col-sm-12">
+                <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                <input type="submit" class="
+                form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                </form>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <p><i class="fa-solid fa-calendar-days"></i> Date | dec 12 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         </div>
+    </div>
+
+    <div class="row container">
+      <div class="card">
+        <div class="row">
+          <div class="col-6">
+            <img src="static/images/bg/news_image_3.webp" class="d-block w-100 p-2" alt="...">
+          </div>
+          <div class="col-6">
+            <div class="card-body">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of  Ipsum
+            </div>
+            <div class="row container">
+              <div class="col-lg-6 col-sm-12">
+                <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                <input type="submit" class="
+                form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                </form>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <p><i class="fa-solid fa-calendar-days"></i> Date | april 12 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         </div>
+    </div>
+
+    <div class="row container">
+      <div class="card">
+        <div class="row">
+          <div class="col-6">
+            <img src="static/images/bg/news_image_4.webp" class="d-block w-100 p-2" alt="...">
+          </div>
+          <div class="col-6">
+            <div class="card-body">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of  Ipsum
+            </div>
+            <div class="row container">
+              <div class="col-lg-6 col-sm-12">
+                <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                <input type="submit" class="
+                form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                </form>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <p><i class="fa-solid fa-calendar-days"></i> Date | feb 14 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         </div>
+    </div>
+  </div>
+<!--top 10 news contianer end-->
+  </div>
+<!--Top news HEadline column end-->
+</div>
+
+<!--news category area start-->
+<div class="row container mt-3">
+  <div class="text-center fs-3 text-dark">
+    <p class"text-center " > <b class="heading-icon-color"><i class="fa-solid fa-rss"></i> N</b>ews category </p>
+  </div>
+<div class="col-lg-3 col-md-6 col-sm-12 ">
+  <div class="row p-3 " style="w-100 h-100">
+    <div class="card card-anim" style="width: 18rem;">
+      <img src="static/images/icons/cricket.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title heading-icon-color"><b>Cricket</b></h5>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12 ">
+  <div class="row p-3 " style="w-100 h-100">
+    <div class="card card-anim" style="width: 18rem;">
+    <img src="static/images/icons/politics.jpeg" class="card-img-top card-image mt-2 w-100" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title heading-icon-color"><b>Politics</b></h5>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12 ">
+  <div class="row p-3 " style="w-100 h-100">
+    <div class="card card-anim" style="width: 18rem;">
+    <img src="static/images/icons/pm_modi.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title heading-icon-color"><b>PM Modi</b></h5>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-1">
+  <div class="row p-3 " style="w-100 h-100">
+    <div class="card card-anim" style="width: 18rem;">
+    <img src="static/images/icons/business.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title heading-icon-color"><b>Business</b></h5>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--news category area end-->
+
+<!--news latest starts -->
+<div class="row bg-mycolor">
+  <div class=container>
+  <div class="row mx-2 my-2">
+  <!--row1 images cards start-->
+  <div class="text-center fs-3 text-dark">
+    <p><b style="color:#9D9CCF;"><i class="fa-solid fa-clock"></i> Latest</b> News</p>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+    <div class="row p-3 " style="w-100 h-100">
+      <div class="card card-anim" style="width: 18rem;">
+        <img src="static/images/bg/news_image_1.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</h5>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+              <input type="submit" class="
+              form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+              </form>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <p><i class="fa-solid fa-calendar-days"></i> Date | feb 14 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+    <div class="row p-3 " style="w-100 h-100">
+      <div class="card card-anim" style="width: 18rem;">
+      <img src="static/images/bg/news_image_2.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+      <div class="card-body">
+        <h5 class="card-title ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</h5>
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+            <input type="submit" class="
+            form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+            </form>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <p><i class="fa-solid fa-calendar-days"></i> Date | feb 14 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+    <div class="row p-3 " style="w-100 h-100">
+      <div class="card card-anim" style="width: 18rem;">
+      <img src="static/images/bg/news_image_3.webp" class="card-img-top card-image mt-2 w-100" alt="...">
+      <div class="card-body">
+        <h5 class="card-title ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</h5>
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+            <input type="submit" class="
+            form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+            </form>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <p><i class="fa-solid fa-calendar-days"></i> Date | feb 14 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-1">
+    <div class="row p-3 " style="w-100 h-100">
+      <div class="card card-anim" style="width: 18rem;">
+      <img src="static/images/bg/news_image_4.webp" class="card-img-top card-image mt-2 w-100" alt="...">
+      <div class="card-body">
+        <h5 class="card-title ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</h5>
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+            <input type="submit" class="
+            form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+            </form>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <p><i class="fa-solid fa-calendar-days"></i> Date | feb 14 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--row1 images cards end-->
+  </div>
+  <div class="row mx-2 my-2">
+    <!--row2 images cards start-->
+    <div class="col-lg-3 col-md-6 col-sm-12 ">
+      <div class="row p-3 " style="w-100 h-100">
+        <div class="card card-anim" style="width: 18rem;">
+          <img src="static/images/icons/business.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</h5>
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                <input type="submit" class="
+                form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                </form>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <p><i class="fa-solid fa-calendar-days"></i> Date | feb 14 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 ">
+      <div class="row p-3 " style="w-100 h-100">
+        <div class="card card-anim" style="width: 18rem;">
+        <img src="static/images/icons/politics.jpeg" class="card-img-top card-image mt-2 w-100" alt="...">
+        <div class="card-body">
+          <h5 class="card-title ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</h5>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+              <input type="submit" class="
+              form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+              </form>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <p><i class="fa-solid fa-calendar-days"></i> Date | feb 14 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 ">
+      <div class="row p-3 " style="w-100 h-100">
+        <div class="card card-anim" style="width: 18rem;">
+        <img src="static/images/icons/cricket.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+        <div class="card-body">
+          <h5 class="card-title ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</h5>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+              <input type="submit" class="
+              form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+              </form>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <p><i class="fa-solid fa-calendar-days"></i> Date | feb 14 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-1">
+      <div class="row p-3 " style="w-100 h-100">
+        <div class="card card-anim" style="width: 18rem;">
+        <img src="static/images/icons/pm_modi.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</h5>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+              <input type="submit" class="
+              form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+              </form>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <p><i class="fa-solid fa-calendar-days"></i> Date | feb 14 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--row2 images cards end-->
+
+  </div>
+  </div>
+</div>
+<!--news latest end-->
+
+<!--news video start-->
+<div class="container">
+  <div class="text-center fs-3 text-dark">
+    <p><b class="heading-icon-color"><i class="fa-solid fa-video"></i> Video</b> Gallery</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-lg-6">
+      <div class="row container ">
+        <div class="card my-2"> <!---->
+          <div class="row">
+            <div class="col-6">
+              <img src="static/images/bg/news_image_1.jpg" class="d-block w-100 p-2" alt="...">
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of  Ipsum
+              </div>
+              <div class="row container">
+                <div class="col-lg-6 col-sm-12">
+                  <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                  <input type="submit" class="
+                  form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                  </form>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                  <p><i class="fa-solid fa-calendar-days"></i> Date | sept 9 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+           </div> <!---->
+
+           <div class="card my-2"> <!---->
+             <div class="row">
+               <div class="col-6">
+                 <img src="static/images/bg/news_image_2.jpg" class="d-block w-100 p-2" alt="...">
+               </div>
+               <div class="col-6">
+                 <div class="card-body">
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of  Ipsum
+                 </div>
+                 <div class="row container">
+                   <div class="col-lg-6 col-sm-12">
+                     <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                     <input type="submit" class="
+                     form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                     </form>
+                   </div>
+                   <div class="col-lg-6 col-sm-12">
+                     <p><i class="fa-solid fa-calendar-days"></i> Date | sept 9 2023</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+              </div> <!---->
+
+              <div class="card my-2"> <!---->
+                <div class="row">
+                  <div class="col-6">
+                    <img src="static/images/bg/news_image_3.webp" class="d-block w-100 p-2" alt="...">
+                  </div>
+                  <div class="col-6">
+                    <div class="card-body">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of  Ipsum
+                    </div>
+                    <div class="row container">
+                      <div class="col-lg-6 col-sm-12">
+                        <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                        <input type="submit" class="
+                        form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                        </form>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                        <p><i class="fa-solid fa-calendar-days"></i> Date | sept 9 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 </div> <!---->
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-6">
+      <div class="row container ">
+        <div class="card my-2"> <!---->
+          <div class="row">
+            <div class="col-6">
+              <img src="static/images/bg/news_image_4.webp" class="d-block w-100 p-2" alt="...">
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of  Ipsum
+              </div>
+              <div class="row container">
+                <div class="col-lg-6 col-sm-12">
+                  <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                  <input type="submit" class="
+                  form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                  </form>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                  <p><i class="fa-solid fa-calendar-days"></i> Date | sept 9 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+           </div> <!---->
+
+           <div class="card my-2"> <!---->
+             <div class="row">
+               <div class="col-6">
+                 <img src="static/images/icons/cricket.jpg" class="d-block w-100 p-2" alt="...">
+               </div>
+               <div class="col-6">
+                 <div class="card-body">
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of  Ipsum
+                 </div>
+                 <div class="row container">
+                   <div class="col-lg-6 col-sm-12">
+                     <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                     <input type="submit" class="
+                     form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                     </form>
+                   </div>
+                   <div class="col-lg-6 col-sm-12">
+                     <p><i class="fa-solid fa-calendar-days"></i> Date | sept 9 2023</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+              </div> <!---->
+
+              <div class="card my-2"> <!---->
+                <div class="row">
+                  <div class="col-6">
+                    <img src="static/images/icons/business.jpg" class="d-block w-100 p-2" alt="...">
+                  </div>
+                  <div class="col-6">
+                    <div class="card-body">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of  Ipsum
+                    </div>
+                    <div class="row container">
+                      <div class="col-lg-6 col-sm-12">
+                        <form method="post" action="{% url 'bootstrap_demo_home_work_news_portal_news_details' %}">{% csrf_token %}
+                        <input type="submit" class="
+                        form-control txt btn btn-bg-mycolor btn-block mb-2 p-2" value="View more"></input>
+                        </form>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                        <p><i class="fa-solid fa-calendar-days"></i> Date | sept 9 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 </div> <!---->
+      </div>
+    </div>
+  </div>
+</div>
+<!--news video end-->
+
+<!--cities start-->
+<div class="container">
+  <div class="row">
+    <div class="row container mt-3">
+      <div class="text-center fs-3 text-dark">
+        <p class"text-center " > <b class="heading-icon-color"><i class="fa-solid fa-location-pin"></i> C</b>ities </p>
+      </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 ">
+      <div class="row p-3 " style="w-100 h-100">
+        <div class="card card-anim" style="width: 18rem;">
+          <img src="static/images/icons/lucknow.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title heading-icon-color"><b>Lucknow</b></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 ">
+      <div class="row p-3 " style="w-100 h-100">
+        <div class="card card-anim" style="width: 18rem;">
+        <img src="static/images/icons/mumbai.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title heading-icon-color"><b>Mumbai</b></h5>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 ">
+      <div class="row p-3 " style="w-100 h-100">
+        <div class="card card-anim" style="width: 18rem;">
+        <img src="static/images/icons/kolkata.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title heading-icon-color"><b>Kolkata</b></h5>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-1">
+      <div class="row p-3 " style="w-100 h-100">
+        <div class="card card-anim" style="width: 18rem;">
+        <img src="static/images/icons/delhi.jpg" class="card-img-top card-image mt-2 w-100" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title heading-icon-color"><b>Delhi</b></h5>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!--cities end-->
+
+<!--news body end-->
+{% endblock %}

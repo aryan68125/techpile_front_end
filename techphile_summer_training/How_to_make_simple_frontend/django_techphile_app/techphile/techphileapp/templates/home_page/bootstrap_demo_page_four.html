@@ -1,0 +1,68 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+  <link href = "/static/css/bootstrap.css?{% now U %}" rel="stylesheet"/>
+  <link href = "/static/css/all.css?{% now U %}" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="mb-1">
+    <h1 class="text-bg-primary p-3"> This page is a demonstration of bootstrap</h1>
+    <h4 class="text-bg-primary p-3"> This page demonstrates how to use bootstrap classes</h4>
+    <div class = "ul text-bg-dark p-3">
+        <li>How to use row and column class to partition the screen</li>
+        <li>If you want to partition the screen vertically then make row your parent and then use column to partition the screen vertically. Each Row have 12 columns</li>
+        <li>If you want to partition the screen horizontally then make the column your parent and then use row to partition the screen horizontally. Each column have 12 rows</li>
+        <li>A column cannot have another column as a child</li>
+        <li>A row cannot have another row as a child</li>
+        <li>you have to use row and column alternatively in order to get the desired partition on a page</li>
+        <li>row and column classes in bootstrap makes partitioning of the page very easy</li>
+    </div>
+  </div>
+
+<div class="container">
+<div class="column">
+<div class="row text-bg-dark" style="height: 500px;">
+
+</div>
+
+<div class="row text-bg-success" style="height: 500px;">
+    <div class="col-2 text-bg-danger" style="height: 500px;" ></div>
+    <div class="col-10 text-bg-warning" style="height: 500px;" >
+      <div class = "row text-bg-primary" style="height:250px;">
+      </div>
+        <div class = "row text-bg-info" style="height:250px;">
+           <div class="col-6 text-bg-secondary" style="height:calc(100%);"></div>
+           <div class="col-6 text-bg-warning" style="height:calc(100%);"></div>
+       </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container mt-1">
+<h1> Task given in class</h1>
+<div class = "row text-bg-dark mt-1" style="height: 500px;">
+  <div class = "col-2 text-bg-warning" style="height: 500px;"></div>
+  <div class = "col-10 text-bg-danger" style="height: 500px;">
+      <div class = "row text-bg-dark" style="height: 250px;">
+      </div>
+
+      <div class = "row text-bg-primary" style="height: 250px;">
+        <div class="col-6 text-bg-secondary" style="height: 250px;"></div>
+        
+        <div class="col-6 text-bg-success" style="height: 250px;">
+           <div class="row text-bg-danger" style="height: 125px;">
+           </div>
+           <div class="row text-bg-info" style="height: 125px;">
+               <div class ="col-6 text-bg-primary" style="height:calc(100%);"></div>
+               <div class ="col-6 text-bg-success" style="height:calc(100%);"></div>
+           </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

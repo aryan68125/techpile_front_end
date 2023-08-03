@@ -1,0 +1,31 @@
+<!---getting bootstarp--->
+<!doctype html>
+{% load static %}
+
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/base.css?{% now "U" %}">
+  </head>
+  <body>
+
+  	<div id="header">
+	   <div class = "col" style="font-size:35px;">
+	   	TechPhile <b style ="color:#c01818;"> Stack </b>
+	   </div>
+
+	   <div class = "col">
+	   	<b>Mail Us </b> <br/>
+	   </div>
+
+	   <div class ="col">
+	   	<b> Call Us</b> <br/>
+	   	66196912691, 64376328
+	   </div>
+	</div>
+
+    {% block start %}
+
+    {% endblock %}
+
+  </body>
+</html>
